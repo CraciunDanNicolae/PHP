@@ -1,0 +1,140 @@
+body {
+    background-color: #07e299;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #03478a;
+
+}
+
+header {
+    background: linear-gradient(90deg, #3a7bd5, #3a6073);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 95vw;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+nav {
+    background: linear-gradient(90deg, #8E2DE2, #4A00E0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #f1c40f;
+    transform: translateY(-2px);
+}
+
+#search-bar {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.lista-produse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.produs {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produs:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.produs img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.pret-vechi del {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.pret-discount {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pret {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.buy-button {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.discount-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 8px 0 8px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
